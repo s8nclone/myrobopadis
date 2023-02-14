@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import CardList from "./CardList";
 import SearchBox from './SearchBox';
 import { padis }  from './padis';
+import './App.css';
+import Scroll from './Scroll';
 
 class App extends Component {
     constructor() {
@@ -11,6 +13,12 @@ class App extends Component {
             searchfield: ''
         }
     }
+
+    // componentDidMount() {
+    //     fetch('https://jsonplaceholder.typicode.com/users')
+    //     .then(res => res.json())
+    //     .then(users => {this.setState({ padis: users})})
+    // }
 
     onSearchPadis = (event) => {
         this.setState({ searchfield: event.target.value })
@@ -23,9 +31,11 @@ class App extends Component {
         })
         return (
             <div className = "tc">
-                <h1>RoboPadis</h1>
+                <h1 className="f1">RoboPadis</h1>
                 <SearchBox searchChange={this.onSearchPadis} />
-                <CardList padis = {filteredPadis} />
+                <Scroll>
+                    <CardList padis = {filteredPadis} />
+                </Scroll>
             </div>
         )
     };

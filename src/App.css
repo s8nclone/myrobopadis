@@ -1,0 +1,12 @@
+@font-face {
+    font-family: Pacifico;
+    src: url(/font/Pacifico-Regular.ttf);
+    font-weight: 1500;
+    font-size: 100%;
+}
+
+h1 {
+    font-family: Pacifico;
+    color: rgb(3, 34, 3);
+    text-decoration: double underline overline;
+}
