@@ -5,6 +5,11 @@ import { padis }  from './padis';
 import './App.css';
 import Scroll from './Scroll';
 
+if ("serviceWorker" in navigator) {
+    // register service worker
+    navigator.serviceWorker.register("service-worker.js");
+  }
+  
 class App extends Component {
     constructor() {
         super()
