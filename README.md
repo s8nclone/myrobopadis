@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-Access app using link : https://glistening-baklava-0e4b30.netlify.app/
+Access app using link : https://glistening-baklava-0e4b30.netlify.app/ or https://bit.ly/robo-padis
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
